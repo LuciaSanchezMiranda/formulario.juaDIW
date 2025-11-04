@@ -33,7 +33,7 @@ def contact():
         mysql.connection.commit()
         cur.close()
 
-        flash('Contacto guardado exitosamente!')
+        flash('Contacto guardado exitosamente!', 'success')
 
     return render_template('contact.html')
 
